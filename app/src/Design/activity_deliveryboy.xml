@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Deliveryboy"
+    android:background="#0AD6C3"
+    android:orientation="vertical"
+    android:weightSum="3"
+
+
+    >
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+  android:layout_weight="1"/>
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     tools:ignore="ScrollViewCount">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/Registrationform"
+       android:text="Registration Form"
+       android:textColor="@color/purple_200"
+       android:textSize="30sp"
+       android:textAlignment="center"
+       tools:ignore="MissingConstraints"
+       android:gravity="center_horizontal" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Deliveryboy_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:hint="Enter Your Full name"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Deliveryboy_mobile"
+        android:layout_width="match_parent"
+        android:inputType="phone"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:hint="Enter Your Mobile no"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="338dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Deliveryboy_gmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:hint="Enter Your Gmail Id"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+
+        android:textAlignment="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <Button
+        android:id="@+id/deliveryboy_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:background="@color/purple_200"
+        android:gravity="center_horizontal"
+        android:rotationX="-17"
+
+        android:text="Register"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="474dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+  </LinearLayout>
+</ScrollView>
+</LinearLayout>
